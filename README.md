@@ -6,6 +6,6 @@ Branches will be named by the company name and the job, as shown below.
 msft-nerd/intern
 ```
 ## TODO
-- [] Add COMP40 skills
-- [] Computer arithmetic
-- [] Hardware processes (CPU caching, memory, etc)
+- [ ] Add COMP40 skills
+- [ ] Computer arithmetic
+- [ ] Hardware processes (CPU caching, memory, etc)
