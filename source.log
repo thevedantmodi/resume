@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.4)  12 OCT 2023 12:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.4)  12 OCT 2023 12:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -232,7 +232,8 @@ Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count275
 \l__pdf_internal_box=\box55
-) (./source.aux)
+)
+No file source.aux.
 \openout1 = `source.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
@@ -253,7 +254,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
 LaTeX Font Info:    ... okay on input line 99.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
 LaTeX Font Info:    ... okay on input line 99.
- (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count276
 \scratchdimen=\dimen159
@@ -268,7 +269,6 @@ LaTeX Font Info:    ... okay on input line 99.
 \everyMPtoPDFconversion=\toks25
 )
 Package hyperref Info: Link coloring OFF on input line 99.
- (./source.out) (./source.out)
 \@outlinefile=\write3
 \openout3 = `source.out'.
 
@@ -293,6 +293,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 119.
 
 
+/Users/vedantmodi/Desktop/job-work/resume/source.tex:194: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 ...      {\textbf{JetLag} $|$ \emph{Python}}
+                                                  {Mar. 2023 – Present}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+/Users/vedantmodi/Desktop/job-work/resume/source.tex:194: LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.194 ...      {\textbf{JetLag} $|$ \emph{Python}}
+                                                  {Mar. 2023 – Present}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (85.59068pt too wide) in alignment at lines 194--194
+[] [] 
+ []
+
+
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 4.08003pt, for example:
 (fancyhdr)                \setlength{\footskip}{4.08003pt}.
@@ -303,22 +332,28 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package rerunfilecheck Info: File `source.out' has not changed.
-(rerunfilecheck)             Checksum: 29323584CAC619D4B48CFB197BAAA74E;461.
+
+Package rerunfilecheck Warning: File `source.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `source.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  29323584CAC619D4B48CFB197BAAA74E;461.
  ) 
 Here is how much of TeX's memory you used:
- 10332 strings out of 476025
- 165125 string characters out of 5790018
+ 10324 strings out of 476025
+ 165043 string characters out of 5790018
  1885388 words of memory out of 5000000
- 30657 multiletter control sequences out of 15000+600000
- 517879 words of font info for 54 fonts, out of 8000000 for 9000
+ 30654 multiletter control sequences out of 15000+600000
+ 518047 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,291b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on source.pdf (1 page, 105376 bytes).
+ 75i,13n,76p,291b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on source.pdf (1 page, 112889 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  6 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
