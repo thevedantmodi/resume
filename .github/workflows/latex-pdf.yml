@@ -1,4 +1,0 @@
----
-- name: Build LaTeX Document
-  uses: lyuwen/build-latex-action@v1.0.1         
----
