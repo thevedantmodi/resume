@@ -1,6 +1,6 @@
 
 
-\documentclass[letterpaper,9pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -14,6 +14,8 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+
+\usepackage{geometry}
 
 
 %----------FONT OPTIONS----------
@@ -94,14 +96,29 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+% Reclaim the headers
+\geometry{
+  a4paper,
+  left=5mm,
+  right=5mm,
+  top=2mm,
+  bottom=2mm,
+  }
+ 
+
 \begin{document}
 
 \input{components/background.tex}
-\vspace{-8.5mm} % For compressing
+
+\vspace{-6mm} % For compressing
+\section{Summary}
+\input{components/summary}
+
+\vspace{-4.5mm} % For compressing
 \section{Education}
 
 \input{components/education/tufts.tex}
-\vspace{-5mm} % For compressing
+\vspace{-3.5mm} % For compressing
 \section{Experience}
 \resumeSubHeadingListStart
 
@@ -111,7 +128,7 @@
 
   \resumeSubHeadingListEnd
 
-  \vspace{-6mm} % For compressing
+  \vspace{-4.1mm} % For compressing
 
 \section{Relevant Projects}
     \resumeSubHeadingListStart
@@ -124,7 +141,7 @@
 
      
     \resumeSubHeadingListEnd
-  \vspace{-6mm} % For compressing
+  \vspace{-5mm} % For compressing
 
 \section{Skills and Interests}
 
