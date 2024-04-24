@@ -25,7 +25,8 @@ jobs:
       - name: Compile TeX -> PDF
         uses: xu-cheng/latex-action@v2
         with:
-            root_file: resume.tex # Operates on root directory resume.tex
+            root_file: resume.tex # Operates on root directory resume.tex, 
+                          # make sure to have all .tex and .pdf the same name
       - name: Create GitHub Release 🌍
         id: create-release
         uses: actions/create-release@v1
