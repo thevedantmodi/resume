@@ -25,7 +25,7 @@ jobs:
       - name: Compile TeX -> PDF
         uses: xu-cheng/latex-action@v2
         with:
-            root_file: source.tex # Operates on root directory source.tex
+            root_file: main.tex # Operates on root directory main.tex
       - name: Create GitHub Release 🌍
         id: create-release
         uses: actions/create-release@v1
@@ -42,13 +42,13 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{steps.create-release.outputs.upload_url}}
-          asset_path: ./source.pdf
-          asset_name: source-v${{github.run_number}}.pdf
+          asset_path: ./resume.pdf
+          asset_name: resume-v${{github.run_number}}.pdf
           asset_content_type: application/pdf
   
         # Sets up GitHub Pages deployment workflow
       - name: Place output for GitHub Pages
-        run: mkdir build && mv source.pdf build/ && mv index.html build/
+        run: mkdir build && mv resume.pdf build/ && mv index.html build/
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
