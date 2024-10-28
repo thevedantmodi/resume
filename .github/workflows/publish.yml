@@ -15,6 +15,7 @@
 on: [push]
 permissions:
   contents: write
+  id-token: write
 jobs:
   Build-Deploy-Release:
     concurrency: ci-${{ github.ref }}
