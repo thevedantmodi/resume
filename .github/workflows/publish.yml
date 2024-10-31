@@ -36,6 +36,7 @@ jobs:
         with:
           tag_name: ${{github.run_number}} # Change here, e.g. Release 1.0
           release_name: Release ${{github.run_number}}
+          body: "Release spawned from `${{ github.ref_name }}`"
         # Places PDF into releases 
       - name: Upload Release Asset
         id: upload_release_asset
