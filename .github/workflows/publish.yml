@@ -47,11 +47,14 @@ jobs:
           asset_path: ./resume.pdf
           asset_name: resume-v${{github.run_number}}.pdf
           asset_content_type: application/pdf
-  
-        # Sets up GitHub Pages deployment workflow
+        
+        # Sets up GitHub Pages deployment workflow only if on the main branch
       - name: Place output for GitHub Pages
+        if: github.ref == 'refs/heads/main'
         run: mkdir build && mv resume.pdf build/ && mv index.html build/
+
       - name: Deploy 🚀
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
             folder: build # The folder the action should deploy.
