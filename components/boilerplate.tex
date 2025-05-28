@@ -46,9 +46,9 @@
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+% \titleformat{\section}{
+%   \vspace{-4pt}\scshape\raggedright\large
+% }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -99,6 +99,12 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\subfootnotesize}{\fontsize{7.5pt}{10pt}\selectfont}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\small
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Reclaim the headers
 \geometry{
