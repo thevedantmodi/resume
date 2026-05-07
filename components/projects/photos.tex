@@ -11,15 +11,30 @@
 % % within a Docker container on an AWS EC2 instance}
 % \resumeItemListEnd
 
-\resumeProjectHeading {\textbf{Photos by Vedant Modi} $|$
-	\emph{TypeScript/JavaScript, Python, Java, Spring Boot, React, PostgreSQL}}{November 2025}
+% \resumeProjectHeading {\textbf{Photos by Vedant Modi} $|$
+% 	\emph{TypeScript/JavaScript, Python, React, PostgreSQL}}{November 2025}
+% \resumeItemListStart
+% \resumeItem{Automated photo ETL for \textbf{500+} photos by building a
+% 	Python ingestion engine within a CI/CD pipeline, extracting image metadata
+% 	(GPS, capture settings, etc.).}
+% \resumeItem{Migrated the backend to a serverless PostgreSQL backed
+% 	by PostgreSQL on Railway, exposing endpoints for ingestion, upload, and
+% 	consumption by the React frontend.}
+
+\resumeProjectHeading
+{\textbf{Photos by Vedant Modi} $|$ \emph{Next.js, TypeScript, Rust, Cloudflare
+		Workers, PostgreSQL}}{August 2025 — Present}
 \resumeItemListStart
-\resumeItem{Automated photo ETL for \textbf{500+} photos by building a
-	Python ingestion engine within a CI/CD pipeline, extracting image metadata
-	(GPS, capture settings, etc.).}
-\resumeItem{Migrated the backend to a Spring Boot REST API backed
-	by PostgreSQL on Railway, exposing endpoints for ingestion, upload, and
-	consumption by the React frontend.}
+\resumeItem{Built a full-stack photo journal plotting \textbf{400+} geotagged
+	photos backed by a serverless \textbf{PostgreSQL} database and a global
+	content delivery network.}
+\resumeItem{Improved data throughput by building
+	an ingestion pipeline that concurrently processes EXIF metadata and
+	multi-resolution image compression, leveraging Rust's performance and
+	memory safety guarantees.}
+\resumeItem{Reduced ingest time for users by eliminating manual caption
+	writing, deploying a vision model that generates a caption for each image
+	upon ingestion and passing the result to users for approval.}
 
 
 % \resumeItem{Developed a

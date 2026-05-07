@@ -2,9 +2,24 @@
 {\textbf{Real-Time Transit Data Pipeline} $|$
 	\emph{Go, Embedded C}}{March 2026 – April 2026}
 \resumeItemListStart
-\resumeItem{Delivered real-time NYC subway arrivals across all 24 lines by
-	building a serverless Go function that deserializes a live protobuf feed and
-	serves parsed JSON to downstream embedded devices.
+% \resumeItem{Delivered real-time NYC subway arrivals across all 24 lines by
+% 	building a serverless Go function that deserializes a live protobuf feed and
+% 	serves parsed JSON to downstream embedded devices.
+% }
+
+
+
+\resumeItem{Delivered real-time NYC subway arrivals across all 24 lines to an OLED display
+	by building a serverless Go function that deserializes a live protobuf feed and
+	serves parsed JSON to an ESP32, which forwards arrival data to an STM32 over
+	UART for rendering.}
+
+\resumeItem{
+	Processed streaming transit data under embedded memory and latency constraints,
+	marshaling between cloud, Wi-Fi, and UART boundaries prior to device rendering.
 }
+
+
+
 % \resumeItem{Processed streaming transit data under embedded memory and latency constraints prior to device rendering.}
 \resumeItemListEnd

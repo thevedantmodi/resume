@@ -10,15 +10,28 @@
 % such as nested structs and arrays, by designing a text protocol that encodes
 % explicit lengths for all variable-size fields and handles partial reads.
 % }
-\resumeItem{Engineered a transparent remote procedure call framework enabling
-	reliable cross-network service communication, directly analogous to the
-	inter-service communication patterns underlying modern microservices
-	architectures.
+% \resumeItem{Engineered a transparent remote procedure call framework enabling
+% 	reliable cross-network service communication, directly analogous to the
+% 	inter-service communication patterns underlying modern microservices
+% 	architectures.
+% }
+% \resumeItem{Ensured reliable structured data recovery across a network
+% 	stream abstraction by designing a protocol that handles variable-length
+% 	fields, partial reads, and nested data structures — mirroring the
+% 	serialization challenges present in distributed production systems.
+% }
+
+\resumeItem{
+	Built a transparent remote procedure call framework supporting arbitrary C++ function prototypes,
+	verified by successful cross-network invocation of functions with complex
+	argument types including nested structs and arrays.
 }
-\resumeItem{Ensured reliable structured data recovery across a network
-	stream abstraction by designing a protocol that handles variable-length
-	fields, partial reads, and nested data structures — mirroring the
-	serialization challenges present in distributed production systems.
+
+\resumeItem{
+	Ensured reliable structured data recovery across TCP's stream abstraction by
+	designing a text protocol with explicit length-prefixed fields and partial-read
+	handling — mirroring serialization challenges in production distributed systems.
 }
+
 
 \resumeItemListEnd
