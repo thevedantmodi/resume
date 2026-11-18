@@ -1,0 +1,13 @@
+\resumeProjectHeading
+{\textbf{framelog} $|$ \emph{Go, Swift, SQLite, rclone, git; built with Claude Code}}{May 2026 – Present}
+\resumeItemListStart
+\resumeItem{Built a macOS photo asset manager, used to import \textbf{10,000+} of my
+	own photos: a Go background daemon imports from SD cards, removes duplicates by
+	content hash, versions Lightroom edits in git, and backs up with rclone.}
+\resumeItem{Ensured no photo is lost by re-reading every file after import and
+	verifying it byte for byte (SHA-256) against the library and backup before
+	reporting a card safe to format.}
+\resumeItem{Shipped through Homebrew and a DMG with a Swift menu bar app;
+	\textbf{240+ Go tests} cover concurrency and failure handling, including debounce
+	races, watcher failure and IPC write deadlines.}
+\resumeItemListEnd
