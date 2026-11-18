@@ -1,0 +1,36 @@
+% jpmc-swe.tex -- full-time role, July 2026 - present
+% Keep JPM-internal system names, data sources and unreleased plans generic.
+% TODO(numbers, only add if true):
+%   - hotfix: share/count of deals the fix restored
+%   - error package: how many error codes it maps, who reuses it
+%   - error-format migration: confirm zero user-facing breakages
+%   - SEC spike: filings sampled, token/time saved per filing
+\resumeSubheading
+{Software Engineer – Digital Global Investment Banking, Commercial \& Investment
+	Banking}{July 2026 – Present}
+{J.P. Morgan Chase \& Co.}{New York, NY}
+\resumeItemListStart
+\vspace{1mm}
+
+\resumeItem{Built a reusable error-handling package that turns error codes from an
+	AI document-extraction service into clear, actionable messages for investment
+	bankers, with a safe default for unknown codes and logging for developers; added
+	versioned support for a new upstream error format so the data science team
+	could migrate without breaking anything for users.}
+
+\resumeItem{Traced failures through every layer, from the UI through GraphQL APIs
+	and the database to extraction jobs on Kubernetes (AWS EKS) and AWS Bedrock,
+	making extraction timeouts and failures visible to users.}
+
+\resumeItem{Shipped a production hotfix during a coordinated release for a query
+	that dropped a large share of deals from an upstream system; worked with QA and
+	product on verification and sign-offs.}
+
+\resumeItem{Led a research spike on sourcing deal data from public SEC merger
+	filings: prototyped one integration, compared it with a simpler option, sampled
+	hundreds of filings, scoped production work with two partner data teams, and
+	found a token-saving optimization for the extraction pipeline.}
+
+% Cut for one page: AI-assisted commit tool (applies team commit rules, links
+% each change to its ticket).
+\resumeItemListEnd
