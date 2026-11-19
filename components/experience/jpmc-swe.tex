@@ -26,13 +26,13 @@
 	to its ticket.}
 
 \resumeItem{Made failures in AI document reading traceable and recoverable, as measured by
-	uncovering a gap (images in documents were not being read), by adding retries with backoff
-	and fallbacks and by tracing failures across two Python backend services and a frontend I
-	work in, plus the data science service and a partner application's backend and frontend I
-	consume, down to Kubernetes (AWS EKS) and AWS Bedrock jobs.}
+	uncovering a gap where images in documents were not being read, by tracing each failure
+	across two Python backend services and a frontend I work in, plus the data science service
+	and a partner application's backend and frontend I consume, down to Kubernetes (AWS EKS) and
+	AWS Bedrock jobs, and adding retries with backoff and fallbacks.}
 
-\resumeItem{Replaced generic errors shown when the AI could not read a banker's document with
-	plain-English guidance for bankers who move fast through the app, as measured by coverage of
+\resumeItem{Replaced generic errors with plain-English guidance when the AI cannot read a
+	banker's document, for bankers who move fast through the app, as measured by coverage of
 	\textbf{7 failure types}, by translating each root cause I traced into wording agreed with
 	designers, a safe default for unknown codes, and developer logs that engineers can diagnose
 	from without exposing sensitive deal content.}
