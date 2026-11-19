@@ -1,7 +1,8 @@
 % jpmc-swe.tex -- full-time role, July 2026 - present
 % Bullets follow Google's XYZ formula: accomplished [X], as measured by [Y], by doing [Z].
 % Y is left out only where no true number/proof exists.
-% Order (set by user): SEC spike, error layer, ramp-up, diagnosis, hotfix, reviews, CVEs, versioning.
+% Order: SEC spike, error layer, hotfix, diagnosis, ramp-up, reviews, CVEs, versioning.
+% (Hotfix moved above ramp-up: it is stronger evidence of learning unfamiliar systems with SMEs.)
 % (Previous by-impact order: hotfix, diagnosis, SEC spike, CVEs, error layer, versioning, reviews, ramp-up.) (Earlier version was chronological: Aug ramp-up/reviews -> Sep errors, diagnosis,
 % hotfix -> Oct versioning, spike -> Nov CVEs.)
 % Keep JPM-internal system names, data sources, regions and unreleased plans generic.
@@ -27,9 +28,11 @@
 	fallback message for unexpected errors, and logs engineers can diagnose from without
 	exposing sensitive deal content.}
 
-\resumeItem{Ramped up on an unfamiliar codebase quickly, by using AI to explore it, taking
-	small starter tasks from senior engineers, and bringing rapid prototypes to peers for
-	early feedback.}
+\resumeItem{Restored an admin user's missing deals, taking query results from
+	\textbf{200 to 3,000} the \textbf{same day} \textbf{three product owners} reported it, by tracing
+	the cause to an incorrect filter on a sister application's data, finding the right statuses
+	in its documentation and by asking its team, and releasing the fix through each test environment
+	to production with end-to-end tests and quality assurance sign-off.}
 
 \resumeItem{Diagnosed why some uploaded documents were misread and, \textbf{within a day} of
 	finding it, shipped a clear message for users, by independently discovering that the AI model
@@ -37,11 +40,9 @@
 	backend services, the frontend, S3, Kubernetes (AWS EKS) and AWS Bedrock jobs, and sharing
 	my findings with data scientists, UX designers and quality assurance.}
 
-\resumeItem{Restored an admin user's missing deals, taking query results from
-	\textbf{200 to 3,000} the \textbf{same day} \textbf{three product owners} reported it, by tracing
-	the cause to an incorrect filter on a sister application's data, finding the right statuses
-	in its documentation and by asking its team, and releasing the fix through each test environment
-	to production with end-to-end tests and quality assurance sign-off.}
+\resumeItem{Ramped up on an unfamiliar codebase quickly, by using AI to explore it, taking
+	small starter tasks from senior engineers, and bringing rapid prototypes to peers for
+	early feedback.}
 
 \resumeItem{Kept production changes safe and AI-written code reviewable, by giving and
 	receiving pull request reviews (asking what changes do, flagging breaking changes) and
