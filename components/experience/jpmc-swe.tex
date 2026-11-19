@@ -1,14 +1,12 @@
 % jpmc-swe.tex -- full-time role, July 2026 - present
-% Every bullet follows Google's XYZ formula: accomplished [X], as measured by [Y], by doing [Z].
-% Y is left out only where no true number/proof exists yet (see TODO).
-% Story order: built the feature (error layer) -> hardened it (retries, tracing) -> evolved it with
-% data science safely (versioning) -> production incident (hotfix) -> how I work (reviews, AI
-% ramp-up) -> leading beyond core work (SEC spike). Swap hotfix up to 2nd to lead with production safety.
+% Bullets follow Google's XYZ formula: accomplished [X], as measured by [Y], by doing [Z].
+% Y is left out only where no true number/proof exists.
+% Order = growth story, roughly by month: Aug ramp-up + reviews -> Sep error layer, hotfix ->
+% Oct versioned format, SEC spike/RFC -> Nov CVE upgrades.
+% (Retries/tracing placement after the error layer is assumed; confirm timing.)
 % Keep JPM-internal system names, data sources, regions and unreleased plans generic.
-% TODO(add Y only if true / verified):
-%   - idempotency: what it prevents (not yet specified, so left out)
-%   - ramp-up: time to first merged change
-%   - error layer: who reuses it
+% TODO(add only if true): CVE upgrade count/packages and how verified; idempotency (what it
+%   prevents); who reuses the error layer.
 \resumeSubheading
 {Software Engineer – Digital Global Investment Banking, Commercial \& Investment
 	Banking}{July 2026 – Present}
@@ -17,6 +15,15 @@
 \vspace{0.5mm}
 \item[] {\small\emph{Cross-functional engineer (Python, React/TypeScript) partnering with product, QA and design on an AI-powered investment banking platform that speeds up bankers' M\&A workflows, from advisory to financial modeling and project management.}}
 \vspace{-0.5mm}
+
+\resumeItem{Ramped up on an unfamiliar codebase quickly, by using AI to explore it, taking
+	small starter tasks from senior engineers, and bringing rapid prototypes to peers for
+	early feedback.}
+
+\resumeItem{Kept production changes safe and AI-written code reviewable, by giving and
+	receiving pull request reviews (asking what changes do, flagging breaking changes) and
+	building an AI-assisted commit tool that applies the team's rules and links each change
+	to its ticket.}
 
 \resumeItem{Replaced generic AI-extraction errors with plain-English guidance, as measured
 	by coverage of \textbf{7 failure types} (a Kubernetes timeout now reads ``this document
@@ -29,29 +36,25 @@
 	backend services and a frontend I work in, plus the data science service and a partner
 	application's backend and frontend I consume, down to Kubernetes (AWS EKS) and AWS Bedrock jobs.}
 
-\resumeItem{Let the data science team ship a new model output format, as measured by
-	\textbf{zero user-facing breakage}, by adding versioned support for it alongside the old format.}
-
 \resumeItem{Restored an admin user's missing deals, as measured by query results rising from
 	\textbf{200 to 3,000} and a fix the \textbf{same day} a PM reported it, by shipping through
 	dev, UAT and production with end-to-end tests and QA sign-off under entitlement (authZ) and
 	data-residency controls.}
 
-\resumeItem{Kept production changes safe and grew my knowledge of the codebase, by giving
-	and receiving pull request reviews: asking what changes do, flagging breaking changes and
-	proposing less disruptive alternatives, and using reviews to fill gaps in my knowledge.}
-
-\resumeItem{Ramped up on an unfamiliar codebase quickly and kept AI-written code small,
-	reviewable and traceable, by using AI to explore the code, taking small starter tasks from
-	senior engineers, bringing rapid prototypes to peers for early feedback, and building an
-	AI-assisted commit tool that applies the team's rules and links each change to its ticket.}
+\resumeItem{Let the data science team ship a new model output format when requirements
+	changed, as measured by \textbf{zero user-facing breakage}, by adding versioned support for
+	it alongside the old format.}
 
 \resumeItem{Led a research spike to bring public SEC merger filings into the application:
-	worked with data teams across the firm on sourcing, chose the simpler of two ingestion
-	approaches (fewer new services, less engineering), worked out how to store and refresh the
-	filings, and projected a token cost saving of about \textbf{20\%} across a survey of
-	\textbf{20,000+ filings} in an RFC for the data science team on teaching an AI model to read
-	the documents the way a banker does, guided by what bankers said was most useful.}
+	consulted data teams across the firm on sourcing, chose the simpler of two ingestion
+	approaches (fewer new services), worked out storage and refresh, and projected a token
+	cost saving of about \textbf{20\%} across \textbf{20,000+ filings} in an RFC for the data
+	science team on teaching an AI model to read them the way a banker does, guided by what
+	bankers said was most useful.}
+
+\resumeItem{Resolved security vulnerabilities (CVEs) in open-source packages, by upgrading
+	dependencies in the services I work in and releasing the changes safely through dev, UAT
+	and production.}
 
 % Cut for one page: designer/keyboard bullet (shaped error and validation messaging with
 % designers; made the app keyboard-navigable for fast-moving bankers).
