@@ -1,44 +1,21 @@
-% \resumeProjectHeading
-% {\textbf{Photos by Vedant Modi} $|$ \emph{TypeScript/JavaScript, Node.js, Python, React}}{November 2025}
-% \resumeItemListStart
-% \resumeItem{Automated photo ETL for \textbf{500+ photos} by building a Python ingestion engine within a CI/CD pipeline, extracting GPS coordinates and metadata, with assets served via a global CDN for low-latency delivery.}
-% \resumeItem{Migrated backend to a Spring Boot REST API backed by PostgreSQL, exposing endpoints for EXIF metadata extraction, photo processing, and filtered retrieval by year and GPS coordinates.}
-% \resumeItem{Developed a responsive React map visualization enabling dynamic filtering of the photo dataset by year and geographic coordinates.}
-
-% % \resumeItem{Unified user interface by \textbf{modeling 50 components} in Figma
-% % before development}
-% % \resumeItem{Hosted backend server by managing a PostgresSQL database
-% % within a Docker container on an AWS EC2 instance}
-% \resumeItemListEnd
-
-% \resumeProjectHeading {\textbf{Photos by Vedant Modi} $|$
-% 	\emph{TypeScript/JavaScript, Python, React, PostgreSQL}}{November 2025}
-% \resumeItemListStart
-% \resumeItem{Automated photo ETL for \textbf{500+} photos by building a
-% 	Python ingestion engine within a CI/CD pipeline, extracting image metadata
-% 	(GPS, capture settings, etc.).}
-% \resumeItem{Migrated the backend to a serverless PostgreSQL backed
-% 	by PostgreSQL on Railway, exposing endpoints for ingestion, upload, and
-% 	consumption by the React frontend.}
-
+% photos.tex -- rewritten 2026/new-grad to match the live repo
+% (thevedantmodi/photo-maps, vedant.photos). The earlier Rust ingestion /
+% Cloudflare Workers / vision-model caption bullets no longer match the repo
+% and were dropped; they remain in git history.
+% TODO(numbers, only add if true): photos on the site, visitors/subscribers.
+% Photo count is 180 as of 2026-11-17; update when more are uploaded.
 \resumeProjectHeading
-{\textbf{Photos by Vedant Modi} $|$ \emph{Next.js, TypeScript, Rust, Cloudflare
-		Workers, PostgreSQL}}{August 2025 – Present}
+{\textbf{vedant.photos} --- An interactive photo gallery $|$ \emph{Next.js, TypeScript, PostgreSQL,
+		Cloudflare R2}}{August 2025 – Present}
 \resumeItemListStart
-\resumeItem{Built a full-stack photo journal plotting \textbf{400+} geotagged
-	photos backed by a serverless \textbf{PostgreSQL} database and a global
-	content delivery network.}
-\resumeItem{Improved data throughput by building
-	an ingestion pipeline that concurrently processes EXIF metadata and
-	multi-resolution image compression, leveraging Rust's performance and
-	memory safety guarantees.}
-\resumeItem{Reduced ingest time for users by eliminating manual caption
-	writing, deploying a vision model that generates a caption for each image
-	upon ingestion and passing the result to users for approval.}
+\resumeItem{Designed and built a museum-style photo gallery that draws \textbf{500+ users a
+	month}, by studying museum websites and refining the design over \textbf{200+ commits}
+	into a polished, animated site that works on phones and desktops.}
+\resumeItem{Owned the product end to end, from the map to uploads, storage,
+	email and an installable admin app, by building tools that make publishing and viewing fast:
+	upload from a phone, share cards generated ahead of time and cached, and a weekly digest.}
 
-
-% \resumeItem{Developed a
-% 	responsive React map visualization enabling dynamic filtering of the photo
-% 	dataset by year and geographic coordinates.} 
-
+% Cut (replaced by museum/ownership framing): 180 photos, Mapbox clustering/year filter, RSS,
+% EXIF/GPS + HEIC + sharp pipeline details. Photo count was 180 as of 2026-11-17.
+% TODO: confirm heading start date (first commit in repo is 2025-11-26; heading says August 2025).
 \resumeItemListEnd
