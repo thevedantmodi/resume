@@ -1,30 +1,36 @@
 % jpmc-swe.tex -- full-time role, July 2026 - present
-% Order tuned for Stripe early-career listing (production safety up front).
 % Bullets follow Google's XYZ formula: accomplished [X] as measured by [Y] by doing [Z].
+% Order tuned for Stripe early-career listing (production safety up front).
 % Keep JPM-internal system names, data sources, regions and unreleased plans generic.
 % TODO(numbers, only add if true / verified):
 %   - hotfix: admin user's query went ~120 -> ~5,000 results (verify; the "80%"
 %     figure did not match 120 -> 5k, which would be ~98% missing)
 %   - idempotency: what it prevents (not yet specified, so left out)
 %   - error package: who reuses it
-%   - extraction latency / tokens per document (log in dev/UAT if no prod access)
+%   - code review at JPM: add a line only if true
 \resumeSubheading
 {Software Engineer – Digital Global Investment Banking, Commercial \& Investment
 	Banking}{July 2026 – Present}
 {J.P. Morgan Chase \& Co.}{New York, NY}
 \resumeItemListStart
 \vspace{0.5mm}
-\item[] {\small\emph{Full-stack on an AI feature-extraction platform for bankers' documents, working across design, data science, QA and product.}}
+\item[] {\small\emph{Full-stack (Python, React/TypeScript) on an AI extraction platform for bankers, across design, data science, QA and product.}}
 \vspace{-0.5mm}
 
 \resumeItem{Replaced generic AI-extraction errors with plain-English guidance across
 	\textbf{7 failure types} (a Kubernetes timeout now reads ``this document is too
-	complex to parse''), by building a reusable error layer with a safe default for unknown
-	codes and logs that keep sensitive deal content out.}
+	complex to parse''), by building a reusable error layer (wording agreed with designers)
+	with a safe default for unknown codes and logs that keep sensitive deal content out.}
 
 \resumeItem{Fixed a production query that dropped most of an admin user's deals the
 	\textbf{same day} a PM reported it, by shipping through dev, UAT and production with
 	end-to-end tests and QA sign-off under entitlement (authZ) and data-residency controls.}
+
+\resumeItem{Ramped up on an unfamiliar codebase quickly, by using AI to explore it, taking
+	small starter tasks from senior engineers, and bringing rapid prototypes to peers for
+	early feedback; built an AI-assisted commit tool that applies the team's commit rules
+	and links each change to its ticket, so AI-written code stays small, reviewable and
+	traceable.}
 
 \resumeItem{Made extraction failures recoverable, with \textbf{3 retries} plus backoff and
 	fallbacks so the UI always shows a helpful error, and diagnosable, by tracing them from
@@ -34,15 +40,11 @@
 \resumeItem{Let the data science team ship a new model output format with \textbf{zero
 	user-facing breakage}, by adding versioned support for it alongside the old format.}
 
-\resumeItem{Cut friction for bankers who move quickly through the app, by shaping error and
-	validation messaging with designers (near-final drafts for sign-off) and making it
-	keyboard-navigable.}
-
 \resumeItem{Scoped production work with two partner data teams for sourcing deal data from
-	public SEC merger filings, by running a research spike: sampled filings from 2001 to 2026,
-	chose a simpler integration over a heavier one (fewer new services), and found a token
-	optimization saving about \textbf{20\%} of token cost.}
+	public SEC merger filings, by running a research spike: read and sampled filings across
+	industries from 2001 to 2026, chose a simpler integration over a heavier one (fewer new
+	services), and found a token optimization saving about \textbf{20\%} of token cost.}
 
-% Cut for one page: AI-assisted commit tool (applies team commit rules, links
-% each change to its ticket).
+% Cut for one page: designer/keyboard bullet (shaped error and validation messaging with
+% designers; made the app keyboard-navigable for fast-moving bankers).
 \resumeItemListEnd
