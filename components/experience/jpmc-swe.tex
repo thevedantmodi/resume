@@ -1,7 +1,9 @@
 % jpmc-swe.tex -- full-time role, July 2026 - present
 % Every bullet follows Google's XYZ formula: accomplished [X], as measured by [Y], by doing [Z].
 % Y is left out only where no true number/proof exists yet (see TODO).
-% Order tuned for Stripe early-career listing (production safety up front).
+% Story order: built the feature (error layer) -> hardened it (retries, tracing) -> evolved it with
+% data science safely (versioning) -> production incident (hotfix) -> how I work (reviews, AI
+% ramp-up) -> leading beyond core work (SEC spike). Swap hotfix up to 2nd to lead with production safety.
 % Keep JPM-internal system names, data sources, regions and unreleased plans generic.
 % TODO(add Y only if true / verified):
 %   - hotfix: admin user's query went ~120 -> ~5,000 results (verify; the "80%"
@@ -24,6 +26,15 @@
 	is too complex to parse''), by building a reusable error layer with wording agreed with
 	designers, a safe default for unknown codes, and logs that keep sensitive deal content out.}
 
+\resumeItem{Made extraction failures recoverable and easy to diagnose, as measured by
+	\textbf{3 retries} with backoff, helpful UI errors even when other components fail, and a
+	newly found gap (images in documents not being read), by tracing failures across two Python
+	backend services and a frontend I work in, plus the data science service and a partner
+	application's backend and frontend I consume, down to Kubernetes (AWS EKS) and AWS Bedrock jobs.}
+
+\resumeItem{Let the data science team ship a new model output format, as measured by
+	\textbf{zero user-facing breakage}, by adding versioned support for it alongside the old format.}
+
 \resumeItem{Restored an admin user's missing deals, as measured by fixing the production
 	query the \textbf{same day} a PM reported it, by shipping through dev, UAT and production
 	with end-to-end tests and QA sign-off under entitlement (authZ) and data-residency controls.}
@@ -36,15 +47,6 @@
 	reviewable and traceable, by using AI to explore the code, taking small starter tasks from
 	senior engineers, bringing rapid prototypes to peers for early feedback, and building an
 	AI-assisted commit tool that applies the team's rules and links each change to its ticket.}
-
-\resumeItem{Made extraction failures recoverable and easy to diagnose, as measured by
-	\textbf{3 retries} with backoff, helpful UI errors even when other components fail, and a
-	newly found gap (images in documents not being read), by tracing failures across two Python
-	backend services and a frontend I work in, plus the data science service and a partner
-	application's backend and frontend I consume, down to Kubernetes (AWS EKS) and AWS Bedrock jobs.}
-
-\resumeItem{Let the data science team ship a new model output format, as measured by
-	\textbf{zero user-facing breakage}, by adding versioned support for it alongside the old format.}
 
 \resumeItem{Led a research spike on sourcing deal data from public SEC merger filings,
 	as measured by a token optimization saving about \textbf{20\%} of token cost and production
