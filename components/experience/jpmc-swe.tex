@@ -27,8 +27,8 @@
 
 \resumeItem{Turned generic system errors into plain-language, actionable guidance across
 	\textbf{7 failure types}, enabling a quicker, simpler experience for bankers who move fast
-	through the app, by translating each root cause I traced into wording agreed with designers,
-	a safe default for unknown codes, and developer logs engineers can diagnose from without
+	through the app, by writing messages with designers for each cause I traced, a plain
+	fallback message for unexpected errors, and logs engineers can diagnose from without
 	exposing sensitive deal content.}
 
 \resumeItem{Diagnosed why some uploaded documents were misread and shipped a user-facing fix
@@ -42,26 +42,25 @@
 \resumeItem{Restored an admin user's missing deals, taking query results from
 	\textbf{200 to 3,000} the \textbf{same day} \textbf{three product owners} reported it, by tracing
 	the cause to an incorrect filter on a sister application's data, finding the right statuses
-	in its documentation and from its team, and shipping through dev, UAT and production with
-	end-to-end tests and QA sign-off.}
+	in its documentation and from its team, and releasing the fix through each test environment
+	to production with end-to-end tests and QA sign-off.}
 
 % Cut: "under entitlement (authZ) and data-residency controls" (not part of the root cause).
 
-\resumeItem{Let the data science team ship a new model output format when requirements
-	changed, as measured by \textbf{zero user-facing breakage}, by adding versioned support for
-	it alongside the old format and reporting the images gap to the data science and product
-	teams.}
+\resumeItem{Let the data science team ship a new AI output format when requirements changed,
+	with \textbf{zero user-facing breakage}, by supporting the new format alongside the old one
+	and reporting the images gap to the data science and product teams.}
 
 \resumeItem{Led a research spike to bring public SEC merger filings into the application:
-	consulted data teams across the firm on sourcing, chose the simpler of two ingestion
-	approaches (fewer new services), worked out storage and refresh, and projected a token
-	cost saving of about \textbf{20\%} across \textbf{20,000+ filings} in an RFC for the data
-	science team on teaching an AI model to read them the way a banker does, guided by what
-	bankers said was most useful.}
+	consulted data teams across the firm on where to source them, chose the simpler of two
+	approaches (fewer new services), planned storage and refreshes, and projected an AI cost
+	saving of about \textbf{20\%} across \textbf{20,000+ filings} in a written proposal (RFC)
+	for the data science team on teaching an AI model to read them the way a banker does,
+	guided by what bankers said was most useful.}
 
 \resumeItem{Resolved security vulnerabilities (CVEs) in open-source packages, by upgrading
-	dependencies in the services I work in and releasing the changes safely through dev, UAT
-	and production.}
+	dependencies in the services I work in and releasing the changes safely through each test
+	environment to production.}
 
 % Cut example from the errors bullet (restore if room): a Kubernetes timeout now reads ``this document is too complex to parse''.
 
