@@ -3,7 +3,7 @@
 % Y is left out only where no true number/proof exists.
 % Order = growth story, roughly by month: Aug ramp-up + reviews -> Sep error layer, hotfix ->
 % Oct versioned format, SEC spike/RFC -> Nov CVE upgrades.
-% (Retries/tracing placement after the error layer is assumed; confirm timing.)
+% (Errors then tracing placement within Sep is assumed; confirm timing.)
 % Keep JPM-internal system names, data sources, regions and unreleased plans generic.
 % TODO(add only if true): CVE upgrade count/packages and how verified; idempotency (what it
 %   prevents); who reuses the error layer.
@@ -25,19 +25,17 @@
 	building an AI-assisted commit tool that applies the team's rules and links each change
 	to its ticket.}
 
-\resumeItem{Made failures in AI document reading traceable and recoverable, as measured by
-	uncovering a gap where images in documents were not being read, by tracing each failure
-	across two Python backend services and a frontend I work in, plus the data science service
-	and a partner application's backend and frontend I consume, down to Kubernetes (AWS EKS) and
-	AWS Bedrock jobs, and adding retries with backoff and fallbacks.}
-
 \resumeItem{Replaced generic errors with plain-English guidance when the AI cannot read a
 	banker's document, for bankers who move fast through the app, as measured by coverage of
 	\textbf{7 failure types}, by translating each root cause I traced into wording agreed with
 	designers, a safe default for unknown codes, and developer logs that engineers can diagnose
 	from without exposing sensitive deal content.}
 
-% Cut example (restore if room): a Kubernetes timeout now reads ``this document is too complex to parse''.
+\resumeItem{Made failures in AI document reading traceable end to end and recoverable, as
+	measured by tracing them across two Python backend services and a frontend I work in, plus
+	the data science service and a partner application's backend and frontend I consume, down to
+	Kubernetes (AWS EKS) and AWS Bedrock jobs, by following each failure through every layer and
+	adding retries with backoff and fallbacks.}
 
 \resumeItem{Restored an admin user's missing deals, as measured by query results rising from
 	\textbf{200 to 3,000} and a fix the \textbf{same day} a PM reported it, by shipping through
@@ -46,7 +44,8 @@
 
 \resumeItem{Let the data science team ship a new model output format when requirements
 	changed, as measured by \textbf{zero user-facing breakage}, by adding versioned support for
-	it alongside the old format.}
+	it alongside the old format and detecting a gap in the model (images in documents not being
+	read) so users saw a clear message instead of an unhelpful error.}
 
 \resumeItem{Led a research spike to bring public SEC merger filings into the application:
 	consulted data teams across the firm on sourcing, chose the simpler of two ingestion
@@ -58,6 +57,8 @@
 \resumeItem{Resolved security vulnerabilities (CVEs) in open-source packages, by upgrading
 	dependencies in the services I work in and releasing the changes safely through dev, UAT
 	and production.}
+
+% Cut example from the errors bullet (restore if room): a Kubernetes timeout now reads ``this document is too complex to parse''.
 
 % Cut for one page: designer/keyboard bullet (shaped error and validation messaging with
 % designers; made the app keyboard-navigable for fast-moving bankers).
