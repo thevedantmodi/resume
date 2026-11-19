@@ -6,8 +6,6 @@
 % ramp-up) -> leading beyond core work (SEC spike). Swap hotfix up to 2nd to lead with production safety.
 % Keep JPM-internal system names, data sources, regions and unreleased plans generic.
 % TODO(add Y only if true / verified):
-%   - hotfix: admin user's query went ~120 -> ~5,000 results (verify; the "80%"
-%     figure did not match 120 -> 5k, which would be ~98% missing)
 %   - idempotency: what it prevents (not yet specified, so left out)
 %   - code review: roughly how many PRs reviewed / turnaround
 %   - ramp-up: time to first merged change
@@ -35,9 +33,10 @@
 \resumeItem{Let the data science team ship a new model output format, as measured by
 	\textbf{zero user-facing breakage}, by adding versioned support for it alongside the old format.}
 
-\resumeItem{Restored an admin user's missing deals, as measured by fixing the production
-	query the \textbf{same day} a PM reported it, by shipping through dev, UAT and production
-	with end-to-end tests and QA sign-off under entitlement (authZ) and data-residency controls.}
+\resumeItem{Restored an admin user's missing deals, as measured by query results rising from
+	\textbf{200 to 3,000} and a fix the \textbf{same day} a PM reported it, by shipping through
+	dev, UAT and production with end-to-end tests and QA sign-off under entitlement (authZ) and
+	data-residency controls.}
 
 \resumeItem{Kept production changes safe and grew my knowledge of the codebase, by giving
 	and receiving pull request reviews: asking what changes do, flagging breaking changes and
