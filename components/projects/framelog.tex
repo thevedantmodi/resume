@@ -1,11 +1,14 @@
 \resumeProjectHeading
 {\textbf{framelog} $|$ \emph{Go, Swift, SQLite, rclone, git}}{May 2026 – Present}
 \resumeItemListStart
-\resumeItem{Made formatting a camera card safe, as shown by importing \textbf{10,000+} of my own
-	photos, by building a Go daemon that deduplicates by content hash, tracks Lightroom edits
-	in git, backs up with rclone, and verifies every file byte for byte (SHA-256) first.}
-\resumeItem{Kept the daemon dependable, as shown by \textbf{242 Go tests} run with the race
-	detector in CI, by testing concurrency and failures such as debounce races and watcher errors.}
-\resumeItem{Shipped \textbf{22 tagged releases} through Homebrew and a DMG, by splitting a Go
-	daemon and Swift menu bar app around a documented contract and automating releases in GitHub Actions.}
+\resumeItem{Streamlined my photography workflow into one automatic pipeline, importing
+	\textbf{10,000+} of my own photos, by building a Go daemon that deduplicates by content hash,
+	tracks Lightroom edits in git, backs up with rclone, and verifies every file byte for byte
+	(SHA-256) before a card is formatted.}
+\resumeItem{Launched it as open source through Homebrew and a DMG across \textbf{22 tagged
+	releases}, kept dependable by \textbf{242 Go tests} run with the race detector in CI,
+	covering concurrency and failures such as debounce races and watcher errors.}
+
+% Cut: separate release bullet (split into Go daemon + Swift menu bar app around a documented
+% protocol contract; automated build, release and Homebrew tap update in GitHub Actions).
 \resumeItemListEnd
