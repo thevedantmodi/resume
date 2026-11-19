@@ -5,16 +5,17 @@
 % TODO(numbers, only add if true): photos on the site, visitors/subscribers.
 % Photo count is 180 as of 2026-11-17; update when more are uploaded.
 \resumeProjectHeading
-{\textbf{Photos by Vedant Modi} $|$ \emph{Next.js, TypeScript, PostgreSQL, Cloudflare
-		R2, Mapbox}}{August 2025 – Present}
+{\textbf{vedant.photos} -- interactive photo gallery $|$ \emph{Next.js, TypeScript, PostgreSQL,
+		Cloudflare R2, Mapbox}}{August 2025 – Present}
 \resumeItemListStart
-\resumeItem{Built and launched a live photo site (vedant.photos) with \textbf{180} of my
-	own edited photos: a Mapbox map with clustered, year-filterable geotagged
-	photos, per-photo pages with generated
-	story-sized share cards, an RSS feed, and a weekly email digest sent only when
-	there are new photos.}
-\resumeItem{Designed the upload pipeline: an authenticated admin app uploads
-	originals to Cloudflare R2, then extracts EXIF/GPS, converts HEIC and generates
-	multiple image sizes with \texttt{sharp} into a serverless PostgreSQL (Neon,
-	Drizzle) database; installable as a PWA.}
+\resumeItem{Designed and built a museum-style photo gallery that draws \textbf{500+ users a
+	month}, by studying museum websites and refining the design over \textbf{200+ commits}
+	into a polished, animated site that works on phones and desktops.}
+\resumeItem{Owned the product end to end, from the map and photo pages to uploads, storage,
+	email and an installable admin app, by building tools that make publishing fast: upload
+	from a phone, share cards generated ahead of time and cached, and a weekly digest.}
+
+% Cut (replaced by museum/ownership framing): 180 photos, Mapbox clustering/year filter, RSS,
+% EXIF/GPS + HEIC + sharp pipeline details. Photo count was 180 as of 2026-11-17.
+% TODO: confirm heading start date (first commit in repo is 2025-11-26; heading says August 2025).
 \resumeItemListEnd
