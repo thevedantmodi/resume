@@ -25,16 +25,17 @@
 	building an AI-assisted commit tool that applies the team's rules and links each change
 	to its ticket.}
 
-\resumeItem{Replaced generic AI-extraction errors with plain-English guidance, as measured
-	by coverage of \textbf{7 failure types} (a Kubernetes timeout now reads ``this document
-	is too complex to parse''), by building a reusable error layer with wording agreed with
-	designers, a safe default for unknown codes, and logs that keep sensitive deal content out.}
+\resumeItem{Made extraction failures diagnosable and recoverable, as measured by \textbf{3
+	retries} with backoff, fallbacks when other components fail, and a newly found gap (images in
+	documents not being read), by tracing failures across two Python backend services and a
+	frontend I work in, plus the data science service and a partner application's backend and
+	frontend I consume, down to Kubernetes (AWS EKS) and AWS Bedrock jobs.}
 
-\resumeItem{Made extraction failures recoverable and easy to diagnose, as measured by
-	\textbf{3 retries} with backoff, helpful UI errors even when other components fail, and a
-	newly found gap (images in documents not being read), by tracing failures across two Python
-	backend services and a frontend I work in, plus the data science service and a partner
-	application's backend and frontend I consume, down to Kubernetes (AWS EKS) and AWS Bedrock jobs.}
+\resumeItem{Replaced generic AI-extraction errors with plain-English guidance for bankers who
+	move fast through the app, as measured by coverage of \textbf{7 failure types} (a Kubernetes
+	timeout now reads ``this document is too complex to parse''), by translating each root cause I
+	traced into wording agreed with designers, with a safe default for unknown codes and logs that
+	keep sensitive deal content out.}
 
 \resumeItem{Restored an admin user's missing deals, as measured by query results rising from
 	\textbf{200 to 3,000} and a fix the \textbf{same day} a PM reported it, by shipping through
