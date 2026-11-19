@@ -1,9 +1,9 @@
 % jpmc-swe.tex -- full-time role, July 2026 - present
 % Bullets follow Google's XYZ formula: accomplished [X], as measured by [Y], by doing [Z].
 % Y is left out only where no true number/proof exists.
-% Order = growth story, roughly by month: Aug ramp-up + reviews -> Sep error layer, hotfix ->
-% Oct versioned format, SEC spike/RFC -> Nov CVE upgrades.
-% (Errors then tracing placement within Sep is assumed; confirm timing.)
+% Order = by impact (strongest first): hotfix, diagnosis, SEC spike, CVEs, error layer, versioning,
+% reviews, ramp-up. (Earlier version was chronological: Aug ramp-up/reviews -> Sep errors, diagnosis,
+% hotfix -> Oct versioning, spike -> Nov CVEs.)
 % Keep JPM-internal system names, data sources, regions and unreleased plans generic.
 % TODO(add only if true): CVE upgrade count/packages and how verified; idempotency (what it
 %   prevents); who reuses the error layer.
@@ -15,41 +15,17 @@
 \item[] {\small\emph{Cross-functional engineer (Python, React/TypeScript) partnering with product, quality assurance and design on an AI-powered investment banking platform that speeds up bankers' M\&A workflows, from advisory to financial modeling and project management.}}
 \vspace{-0.5mm}
 
-\resumeItem{Ramped up on an unfamiliar codebase quickly, by using AI to explore it, taking
-	small starter tasks from senior engineers, and bringing rapid prototypes to peers for
-	early feedback.}
-
-\resumeItem{Kept production changes safe and AI-written code reviewable, by giving and
-	receiving pull request reviews (asking what changes do, flagging breaking changes) and
-	building an AI-assisted commit tool that applies the team's rules and links each change
-	to its ticket.}
-
-\resumeItem{Turned generic system errors into plain-language, actionable guidance across
-	\textbf{7 failure types}, enabling a quicker, simpler experience for bankers who move fast
-	through the app, by writing messages with designers for each cause I traced, a plain
-	fallback message for unexpected errors, and logs engineers can diagnose from without
-	exposing sensitive deal content.}
-
-\resumeItem{Diagnosed why some uploaded documents were misread and, \textbf{within a day} of
-	finding it, shipped a clear message for users, by independently discovering that the AI model
-	skipped images inside them (a gap in the data science service), tracing it across two Python
-	backend services, the frontend, S3, Kubernetes (AWS EKS) and AWS Bedrock jobs, and sharing
-	my findings with data scientists, UX designers and quality assurance.}
-
-% Cut (weak evidence, restore only with an outcome): retries with backoff (3 attempts) and fallbacks.
-
 \resumeItem{Restored an admin user's missing deals, taking query results from
 	\textbf{200 to 3,000} the \textbf{same day} \textbf{three product owners} reported it, by tracing
 	the cause to an incorrect filter on a sister application's data, finding the right statuses
 	in its documentation and by asking its team, and releasing the fix through each test environment
 	to production with end-to-end tests and quality assurance sign-off.}
 
-% Cut: "under entitlement (authZ) and data-residency controls" (not part of the root cause).
-
-\resumeItem{Stopped application deployments from waiting on AI model updates, with
-	\textbf{zero user-facing breakage} when requirements changed, by introducing versioning so
-	the new AI output format runs alongside the old one and the application falls back to the
-	old version instead of regressing features.}
+\resumeItem{Diagnosed why some uploaded documents were misread and, \textbf{within a day} of
+	finding it, shipped a clear message for users, by independently discovering that the AI model
+	skipped images inside them (a gap in the data science service), tracing it across two Python
+	backend services, the frontend, S3, Kubernetes (AWS EKS) and AWS Bedrock jobs, and sharing
+	my findings with data scientists, UX designers and quality assurance.}
 
 \resumeItem{Led a research spike to bring public SEC merger filings into the application:
 	consulted data teams across the firm on sourcing, chose the simpler of two approaches (fewer
@@ -60,6 +36,30 @@
 \resumeItem{Cleared security vulnerabilities (CVEs) in \textbf{40+ open-source packages} across
 	\textbf{three repositories}, meeting security mandates as confirmed by internal scans, by
 	upgrading dependencies and releasing the changes safely to production.}
+
+\resumeItem{Turned generic system errors into plain-language, actionable guidance across
+	\textbf{7 failure types}, enabling a quicker, simpler experience for bankers who move fast
+	through the app, by writing messages with designers for each cause I traced, a plain
+	fallback message for unexpected errors, and logs engineers can diagnose from without
+	exposing sensitive deal content.}
+
+\resumeItem{Stopped application deployments from waiting on AI model updates, with
+	\textbf{zero user-facing breakage} when requirements changed, by introducing versioning so
+	the new AI output format runs alongside the old one and the application falls back to the
+	old version instead of regressing features.}
+
+\resumeItem{Kept production changes safe and AI-written code reviewable, by giving and
+	receiving pull request reviews (asking what changes do, flagging breaking changes) and
+	building an AI-assisted commit tool that applies the team's rules and links each change
+	to its ticket.}
+
+\resumeItem{Ramped up on an unfamiliar codebase quickly, by using AI to explore it, taking
+	small starter tasks from senior engineers, and bringing rapid prototypes to peers for
+	early feedback.}
+
+% Cut (weak evidence, restore only with an outcome): retries with backoff (3 attempts) and fallbacks.
+
+% Cut: "under entitlement (authZ) and data-residency controls" (not part of the root cause).
 
 % Cut (unconfirmed): "through each test environment" (dev/UAT/prod) for the CVE releases.
 
