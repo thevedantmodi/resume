@@ -31,18 +31,18 @@
 	fallback message for unexpected errors, and logs engineers can diagnose from without
 	exposing sensitive deal content.}
 
-\resumeItem{Diagnosed why some uploaded documents were misread and shipped a user-facing fix
-	\textbf{within a day} of finding it, by independently discovering that the AI model skipped
-	images inside them, a gap in the data science service, tracing it across two Python backend
-	services, the frontend, S3, Kubernetes (AWS EKS) and AWS Bedrock jobs, sharing my findings
-	with data scientists, UX designers and quality assurance, and deploying a clear message for users.}
+\resumeItem{Diagnosed why some uploaded documents were misread and, \textbf{within a day} of
+	finding it, shipped a clear message for users, by independently discovering that the AI model
+	skipped images inside them (a gap in the data science service), tracing it across two Python
+	backend services, the frontend, S3, Kubernetes (AWS EKS) and AWS Bedrock jobs, and sharing
+	my findings with data scientists, UX designers and quality assurance.}
 
 % Cut (weak evidence, restore only with an outcome): retries with backoff (3 attempts) and fallbacks.
 
 \resumeItem{Restored an admin user's missing deals, taking query results from
 	\textbf{200 to 3,000} the \textbf{same day} \textbf{three product owners} reported it, by tracing
 	the cause to an incorrect filter on a sister application's data, finding the right statuses
-	in its documentation and from its team, and releasing the fix through each test environment
+	in its documentation and by asking its team, and releasing the fix through each test environment
 	to production with end-to-end tests and quality assurance sign-off.}
 
 % Cut: "under entitlement (authZ) and data-residency controls" (not part of the root cause).
@@ -53,15 +53,14 @@
 	old version instead of regressing features.}
 
 \resumeItem{Led a research spike to bring public SEC merger filings into the application:
-	consulted data teams across the firm on where to source them, chose the simpler of two
-	approaches (fewer new services), planned storage and refreshes, and projected an AI cost
-	saving of about \textbf{20\%} across \textbf{20,000+ filings} in a written proposal (RFC)
-	for the data science team on teaching an AI model to read them the way a banker does,
-	guided by what bankers said was most useful.}
+	consulted data teams across the firm on sourcing, chose the simpler of two approaches (fewer
+	new services), planned storage and refreshes, and wrote a proposal (RFC) for the data science
+	team on teaching an AI model to read filings the way bankers do, guided by what bankers said
+	was most useful and projecting about \textbf{20\%} AI cost savings across \textbf{20,000+ filings}.}
 
 \resumeItem{Cleared security vulnerabilities (CVEs) in \textbf{40+ open-source packages} across
-	\textbf{three repositories}, confirmed by internal open-source scans and meeting security
-	mandates, by upgrading dependencies and releasing the changes safely to production.}
+	\textbf{three repositories}, meeting security mandates as confirmed by internal scans, by
+	upgrading dependencies and releasing the changes safely to production.}
 
 % Cut (unconfirmed): "through each test environment" (dev/UAT/prod) for the CVE releases.
 
