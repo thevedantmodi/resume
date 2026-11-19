@@ -31,11 +31,10 @@
 	a safe default for unknown codes, and developer logs engineers can diagnose from without
 	exposing sensitive deal content.}
 
-\resumeItem{Found why some uploaded documents were misread, that the AI model skipped images
-	inside them, a gap in the data science service, by learning each layer independently and
-	tracing it across two Python backend services, the frontend, S3, Kubernetes (AWS EKS) and
-	AWS Bedrock jobs with help from senior engineers, so users got a clear message instead of
-	an unhelpful error.}
+\resumeItem{Made failures on documents containing images clear instead of confusing for users,
+	by independently discovering that the AI model skipped those images, a gap in the data science
+	service, and tracing it across two Python backend services, the frontend, S3, Kubernetes
+	(AWS EKS) and AWS Bedrock jobs, learning each layer on my own and with help from senior engineers.}
 
 % Cut (weak evidence, restore only with an outcome): retries with backoff (3 attempts) and fallbacks.
 
