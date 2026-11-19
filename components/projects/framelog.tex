@@ -2,12 +2,12 @@
 {\textbf{framelog} $|$ \emph{Go, Swift, SQLite, rclone, git}}{May 2026 – Present}
 \resumeItemListStart
 \resumeItem{Streamlined my photography workflow into one automatic pipeline, importing
-	\textbf{10,000+} of my own photos, by building a Go daemon that deduplicates by content hash,
-	tracks Lightroom edits in git, backs up with rclone, and verifies every file byte for byte
-	(SHA-256) before a card is formatted.}
-\resumeItem{Launched it as open source through Homebrew and a DMG across \textbf{22 tagged
-	releases}, kept dependable by \textbf{242 Go tests} run with the race detector in CI,
-	covering concurrency and failures such as debounce races and watcher errors.}
+	\textbf{10,000+} of my own photos, by building an app that removes duplicates, keeps a history
+	of my edits, backs everything up, and double-checks every file was copied correctly
+	before I clear a memory card.}
+\resumeItem{Launched it as open source through Homebrew across \textbf{22 releases}, kept
+	reliable by \textbf{242 automated tests} that run on every code change, including tricky
+	timing and failure cases.}
 
 % Cut: separate release bullet (split into Go daemon + Swift menu bar app around a documented
 % protocol contract; automated build, release and Homebrew tap update in GitHub Actions).
