@@ -35,11 +35,11 @@
 	and links each change to its ticket, so AI-written code stays small, reviewable and
 	traceable.}
 
-\resumeItem{Made extraction failures recoverable, with \textbf{3 retries} plus backoff and
-	fallbacks so the UI always shows a helpful error, and diagnosable, by tracing them across
-	two Python backend services and a frontend I work in, plus the data science service and a
-	partner application's backend and frontend I consume, down to Kubernetes (AWS EKS) and AWS
-	Bedrock jobs; the trace exposed that images in documents were not being read.}
+\resumeItem{Made extraction failures recoverable and easy to diagnose, as shown by \textbf{3
+	retries} with backoff, helpful UI errors even when other components fail, and a newly found
+	gap (images in documents not being read), by tracing failures across two Python backend
+	services and a frontend I work in, plus the data science service and a partner application's
+	backend and frontend I consume, down to Kubernetes (AWS EKS) and AWS Bedrock jobs.}
 
 \resumeItem{Let the data science team ship a new model output format with \textbf{zero
 	user-facing breakage}, by adding versioned support for it alongside the old format.}
